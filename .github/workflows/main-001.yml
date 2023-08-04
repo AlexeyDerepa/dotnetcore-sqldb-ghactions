@@ -1,6 +1,6 @@
 name: My !!! Run Azure Login with OIDC
 on: [push]
-
+# sdfasdf
 permissions:
       id-token: write
       contents: read

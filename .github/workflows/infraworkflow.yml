@@ -4,6 +4,12 @@ on:
         paths: 
         - 'ARM/**'
         - '.github/workflows/infraworkflow.yml'
+  # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
+
+permissions:
+      id-token: write
+      contents: read    
 
 env:
     AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}    # set this to your Azure Subscription Id
