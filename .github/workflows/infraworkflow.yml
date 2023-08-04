@@ -7,7 +7,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
 
-    
+permissions:
+      id-token: write
+      contents: read    
+
 env:
     AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}    # set this to your Azure Subscription Id
     AZURE_RESOURCEGROUP_NAME: demo-webappsql-gh-actions                      # set this to your preferred resource group name
